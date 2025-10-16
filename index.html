@@ -1,3 +1,291 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Grand Final Uda & Uni Payakumbuh 2025</title>
+    
+<meta name="description" content="Hadiri acara Pemilihan Uda Uni Duta Wisata Kota Payakumbuh 2025! Saksikan generasi muda berprestasi mempersembahkan pesona budaya dan pariwisata kota tercinta.">
+<meta name="keywords" content="Uda Uni, Duta Wisata, Payakumbuh, Pemilihan 2025, Pariwisata, Budaya, Event Kota Payakumbuh, Uda Uni Payakumbuh">
+<meta name="author" content="Dinas Pariwisata Kota Payakumbuh">
+
+<meta property="og:title" content="Undangan Pemilihan Uda Uni Duta Wisata Kota Payakumbuh 2025">
+<meta property="og:description" content="Mari ramaikan dan dukung para finalis Uda Uni Duta Wisata Kota Payakumbuh 2025! Tampilkan budaya, bakat, dan semangat generasi muda.">
+<meta property="og:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHSgijoXHVGVttSkRZkInJWJuFQyPlTM-idBDTH1U69b1Hj9NUk1JK_zfKS7uflXA0DNktmRioW9ZHyXKeR6pKULV_f-CvUBKv5NnLnC8LfR0Qr2BSso6Pbx2BKFrB_E1rTscFvB-Fn-_CwSaSkZgvQs8x1bFaeFOFfFBQpRNYAqXjmGqd0FHVcPxmqCRm/s1600/Afif%20Loren.png">
+<meta property="og:url" content="https://undangan.udauni.or.id">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="id_ID">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Undangan Pemilihan Uda Uni Duta Wisata Kota Payakumbuh 2025">
+<meta name="twitter:description" content="Dukung finalis Uda Uni 2025 dan nikmati sajian budaya terbaik Kota Payakumbuh!">
+<meta name="twitter:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHSgijoXHVGVttSkRZkInJWJuFQyPlTM-idBDTH1U69b1Hj9NUk1JK_zfKS7uflXA0DNktmRioW9ZHyXKeR6pKULV_f-CvUBKv5NnLnC8LfR0Qr2BSso6Pbx2BKFrB_E1rTscFvB-Fn-_CwSaSkZgvQs8x1bFaeFOFfFBQpRNYAqXjmGqd0FHVcPxmqCRm/s1600/Afif%20Loren.png">
+<meta name="twitter:site" content="@udaunikotapayakumbuh">
+
+      
+    <!-- Memuat Tailwind CSS untuk styling cepat dan responsif -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Memuat ikon dari Lucide -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600;700&display=swap');
+        
+        /* Font utama untuk judul dan penekanan */
+        .font-primary { font-family: 'Playfair Display', serif; }
+        /* Font sekunder untuk teks isi */
+        .font-secondary { font-family: 'Inter', sans-serif; }
+
+        /* Latar belakang dengan pola batik/songket Minang (Placeholder) */
+        .bg-minang {
+            background-color: #0d0d0d; /* Deep Black/Dark Grey */
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtxL3uFD_vNwgmM_cA7QKFhrbqEay8AVU_rKk3ohATlA&s=10'); 
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        /* Kartu Undangan utama */
+        .card-invitation {
+            background-color: rgba(255, 255, 255, 0.05); /* Sedikit transparan */
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Kelas untuk animasi tombol */
+        .btn-open {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+        }
+
+        .btn-open:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px rgba(252, 212, 59, 0.4), 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Menyembunyikan overflow saat undangan belum dibuka */
+        .hidden-overflow {
+            overflow: hidden;
+            height: 100vh;
+        }
+
+        /* Kelas untuk gradien emas */
+        .text-gold {
+            background: linear-gradient(45deg, #FACC15, #EAB308, #FDE047);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .border-gold {
+            border: 3px solid #FACC15;
+            box-shadow: 0 0 15px rgba(252, 212, 59, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-minang text-white font-secondary hidden-overflow" id="body-container">
+
+    <!-- Screen Pembuka (Cover) -->
+    <div id="cover-screen" class="fixed inset-0 flex flex-col items-center justify-center p-4 z-50 transition-opacity duration-1000 bg-black/90">
+        
+        <div class="text-center">
+            <h1 class="font-primary text-2xl mb-4 text-gold">IKATAN UDA & UNI</h1>
+            <h2 class="font-primary text-4xl sm:text-5xl font-bold mb-8">KOTA PAYAKUMBUH</h2>
+            
+            <p class="text-lg mb-2">Kepada Yth:</p>
+            <p id="guest-name-cover" class="text-2xl font-semibold text-gold mb-10"></p>
+            
+            <button id="open-button" class="btn-open bg-yellow-500 hover:bg-yellow-400 text-gray-900 font-bold py-3 px-8 rounded-full flex items-center justify-center mx-auto text-lg">
+                <i data-lucide="mail-open" class="w-5 h-5 mr-2"></i> Buka Undangan
+            </button>
+            <p class="text-sm mt-4 text-gray-400">Sentuh untuk melihat undangan</p>
+        </div>
+    </div>
+
+    <!-- Konten Undangan Utama -->
+    <main id="main-content" class="min-h-screen pt-12 pb-24 px-4 hidden">
+        <div class="max-w-xl mx-auto space-y-12">
+            
+            <!-- Header dan Judul Utama -->
+            <header class="text-center">
+                <h1 class="font-primary text-4xl sm:text-5xl font-bold text-gold tracking-wider mb-2">
+                    GRAND FINAL
+                </h1>
+                <h2 class="font-primary text-3xl sm:text-4xl font-bold mb-4">
+                    UDA & UNI<br>DUTA WISATA
+                </h2>
+                <p class="text-xl sm:text-2xl font-semibold text-gray-300">
+                    KOTA PAYAKUMBUH 2025
+                </p>
+            </header>
+
+            <!-- Pesan Pembuka -->
+            <section class="card-invitation p-6 rounded-xl text-center shadow-2xl">
+                <p class="text-gray-200 mb-4 font-secondary leading-relaxed">
+                    Dengan hormat, kami panitia Pemilihan Uda & Uni Kota Payakumbuh mengundang Bapak/Ibu/Saudara/i untuk hadir menyaksikan malam
+                    <span class="font-bold text-yellow-400">Grand Final Pemilihan Uda & Uni Duta Wisata Kota Payakumbuh Tahun 2025.</span>
+                </p>
+                <div class="border-t border-yellow-500 pt-4 mt-4">
+                    <p class="text-xl font-semibold text-gold">Kepada Yth:</p>
+                    <p id="guest-name-main" class="text-2xl sm:text-3xl font-primary font-bold mt-2"></p>
+                    <p class="text-sm mt-1 text-gray-400">Mohon konfirmasi kehadiran Anda.</p>
+                </div>
+            </section>
+            
+            <!-- Bagian Gambar / Foto Pasangan -->
+            <section class="text-center">
+                <p class="text-lg font-semibold mb-3 text-gold">UDA & UNI KOTA PAYAKUMBUH 2024</p>
+                <div class="flex justify-center space-x-4">
+                    <!-- Placeholder Gambar 1 (Uda & Uni 2024) -->
+                    <div class="w-1/2 p-2 border-gold rounded-xl bg-black">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg5LtUfjiKg8da1pULHr4hRHw1quBCh5_oIcaLbGavv2Ff5g_iyDO_hDXlLl9OWG2qt8z_uDYZNrpR3ay1KSRcPy1lDT30GI66atkICVPuXXC2j7fSj7B_hIu0J_8IDyFQjbNuSsQegqyim5IHcDyyxCgA3N_xFpnPtclvO7UwcKxJeYyCOck4n3GfMWez4/s1600/afif.png" alt="Uda Kota Payakumbuh 2024" class="w-full h-auto object-cover rounded-lg">
+                        <p class="mt-2 text-sm text-gray-400">Uda 2024</p>
+                    </div>
+                    <!-- Placeholder Gambar 2 (Uda & Uni 2024) -->
+                    <div class="w-1/2 p-2 border-gold rounded-xl bg-black">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyPduUEFEgCGkJxKSQnQUJi9U0qzVYZ_JpV3zGlYKo5oO_xJzUrzVGvJSqvLZXkYpKgAbet2wj98fYfP5t3wo7hbGHtXsHmNmd2w2Zf5xgiDiEPFg9s5G-gQzjYRagR6QZbb0aa8H204C9X-jfMLWGksIFxnAMXJ5Vy0UAWfYnD13yWvGG1l30jxMT2IKD/s1600/loren.png" alt="Uni Kota Payakumbuh 2024" class="w-full h-auto object-cover rounded-lg">
+                        <p class="mt-2 text-sm text-gray-400">Uni 2024</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Detail Acara (Waktu & Tempat) -->
+            <section class="card-invitation p-6 rounded-xl shadow-2xl">
+                <h3 class="text-center font-primary text-3xl font-bold mb-6 text-gold">WAKTU & TEMPAT</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                    
+                    <!-- Hari & Tanggal -->
+                    <div class="p-4 border-b border-yellow-500 md:border-b-0 md:border-r">
+                        <i data-lucide="calendar" class="w-8 h-8 mx-auto mb-2 text-yellow-400"></i>
+                        <p class="text-lg font-semibold text-gray-300">Hari, Tanggal</p>
+                        <p class="text-3xl font-primary font-bold mt-1">SABTU</p>
+                        <p class="text-4xl font-primary font-bold text-gold">18 OKTOBER</p>
+                        <p class="text-xl font-semibold">2025</p>
+                    </div>
+
+                    <!-- Waktu -->
+                    <div class="p-4 border-b border-yellow-500 md:border-b-0 md:border-r">
+                        <i data-lucide="clock" class="w-8 h-8 mx-auto mb-2 text-yellow-400"></i>
+                        <p class="text-lg font-semibold text-gray-300">Pukul</p>
+                        <p class="text-4xl font-primary font-bold text-gold">19:00 WIB</p>
+                        <p class="text-xl font-semibold">Selesai</p>
+                    </div>
+
+                    <!-- Tempat -->
+                    <div class="p-4">
+                        <i data-lucide="map-pin" class="w-8 h-8 mx-auto mb-2 text-yellow-400"></i>
+                        <p class="text-lg font-semibold text-gray-300">Tempat</p>
+                        <p class="text-2xl font-primary font-bold mt-1 text-gold">GOR M. YAMIN</p>
+                        <p class="text-xl font-semibold">PAYAKUMBUH</p>
+                    </div>
+                </div>
+
+                <div class="mt-8 text-center">
+                    <a href="https://share.google/FqtPPxIzcVggyj3cS" target="_blank" class="inline-flex items-center bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-2 px-6 rounded-full transition duration-300">
+                        <i data-lucide="map" class="w-4 h-4 mr-2"></i> Lihat di Peta
+                    </a>
+                </div>
+            </section>
+            
+            <!-- Rundown Acara -->
+            <section class="card-invitation p-6 rounded-xl shadow-2xl">
+                <h3 class="text-center font-primary text-3xl font-bold mb-6 text-gold">RUNDOWN ACARA</h3>
+                <ol class="space-y-3 font-secondary text-gray-200">
+                    <li class="flex items-start">
+                        <span class="mr-3 text-yellow-500 font-bold">1.</span> Pembukaan MC
+                    </li>
+                    <li class="flex items-start">
+                        <span class="mr-3 text-yellow-500 font-bold">2.</span> Laporan Panitia Kepala Disparpora Kota Payakumbuh
+                    </li>
+                    <li class="flex items-start">
+                        <span class="mr-3 text-yellow-500 font-bold">3.</span> Sambutan Walikota Payakumbuh
+                    </li>
+                    <li class="flex items-start">
+                        <span class="mr-3 text-yellow-500 font-bold">4.</span> Perkenalan Dewan Juri
+                    </li>
+                    <li class="flex items-start">
+                        <span class="mr-3 text-yellow-500 font-bold">5.</span> Penampilan II Pasang Finalis
+                    </li>
+                    <li class="flex items-start">
+                        <span class="mr-3 text-yellow-500 font-bold">6.</span> Pengumuman Top 5 dan Tanya Jawab
+                    </li>
+                    <li class="flex items-start">
+                        <span class="mr-3 text-yellow-500 font-bold">7.</span> Bintang Tamu
+                    </li>
+                    <li class="flex items-start">
+                        <span class="mr-3 text-yellow-500 font-bold">8.</span> Last Walk Uda & Uni 2024
+                    </li>
+                    <li class="flex items-start">
+                        <span class="mr-3 text-yellow-500 font-bold">9.</span> Pengumuman (Pemenang Uda & Uni 2025)
+                    </li>
+                </ol>
+            </section>
+
+            <!-- Footer / Save The Date -->
+            <footer class="text-center pt-8">
+                <p class="text-lg text-gray-300 mb-2">Kami nantikan kehadiran Anda.</p>
+                <h4 class="font-primary text-3xl font-bold text-gold">SAVE THE DATE</h4>
+                <div class="mt-4">
+                    <button id="save-calendar-button" class="inline-flex items-center bg-transparent border-2 border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-gray-900 font-bold py-2 px-6 rounded-full transition duration-300">
+                        <i data-lucide="calendar-check" class="w-4 h-4 mr-2"></i> Tambahkan ke Kalender
+                    </button>
+                </div>
+            </footer>
+        </div>
+    </main>
+
+    <script>
+        // Inisialisasi ikon Lucide
+        lucide.createIcons();
+
+        // 1. Fungsi untuk mendapatkan parameter dari URL
+        function getQueryVariable(variable) {
+            const query = window.location.search.substring(1);
+            const vars = query.split("&");
+            for (let i = 0; i < vars.length; i++) {
+                let pair = vars[i].split("=");
+                if (pair[0] === variable) {
+                    // Decode URI component untuk menangani spasi (%20)
+                    return decodeURIComponent(pair[1].replace(/\+/g, " "));
+                }
+            }
+            return null;
+        }
+
+        // 2. Tentukan Nama Tamu
+        const defaultGuest = "Bapak/Ibu/Saudara/i";
+        let guestName = getQueryVariable("to") || defaultGuest;
+        
+        // Atur nama tamu di cover dan konten utama
+        document.getElementById('guest-name-cover').textContent = guestName;
+        document.getElementById('guest-name-main').textContent = guestName;
+
+        // 3. Logika Buka Undangan (Cover Screen)
+        const coverScreen = document.getElementById('cover-screen');
+        const mainContent = document.getElementById('main-content');
+        const bodyContainer = document.getElementById('body-container');
+        const openButton = document.getElementById('open-button');
+
+        openButton.addEventListener('click', () => {
+            // Animasi transisi menghilang
+            coverScreen.style.opacity = '0';
+            
+            setTimeout(() => {
+                // Sembunyikan cover setelah transisi
+                coverScreen.classList.add('hidden');
+                // Tampilkan konten utama
+                mainContent.classList.remove('hidden');
+                // Hapus kelas untuk mengizinkan scroll
+                bodyContainer.classList.remove('hidden-overflow');
+            }, 1000); // Sesuai dengan durasi transisi CSS
+        });
+
+        // 4. Logika Save to Calendar (iCalendar/Google Calendar)
+        document.getElementById('save-calendar-button').addEventListener('click', () => {
+            const title = "Grand Final Uda & Uni Duta Wisata Kota Payakumbuh 2025";
+            const location = "GOR M. YAMIN, Payakumbuh";
+            const description = "Malam Grand Final Pemilihan Uda & Uni Duta Wisata Kota Payakumbuh Tahun 2025. Undangan ditujukan kepada " + guestName;
+            
             // Waktu acara: 18 Oktober 2025, 19:00 WIB
             // Format ISO 8601: YYYYMMDDTHHMMSS
             const startTime = '20251018T120000Z'; // 19:00 WIB = 12:00 UTC
