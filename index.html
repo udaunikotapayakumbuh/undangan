@@ -1,0 +1,37 @@
+            // Waktu acara: 18 Oktober 2025, 19:00 WIB
+            // Format ISO 8601: YYYYMMDDTHHMMSS
+            const startTime = '20251018T120000Z'; // 19:00 WIB = 12:00 UTC
+            const endTime = '20251018T150000Z'; // Perkiraan 3 jam = 22:00 WIB = 15:00 UTC
+
+            // Cek jika user menggunakan Google (Android) atau Apple/lainnya (iOS/Desktop)
+            if (navigator.userAgent.match(/android/i)) {
+                // Link Google Calendar untuk Android
+                const googleCalUrl = `https://www.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(title)}&dates=${startTime}/${endTime}&details=${encodeURIComponent(description)}&location=${encodeURIComponent(location)}`;
+                window.open(googleCalUrl, '_blank');
+            } else {
+                // Fallback untuk iCalendar (iOS/Desktop)
+                const icsContent = 
+                    "BEGIN:VCALENDAR\r\n" +
+                    "VERSION:2.0\r\n" +
+                    "BEGIN:VEVENT\r\n" +
+                    `DTSTART:${startTime}\r\n` +
+                    `DTEND:${endTime}\r\n` +
+                    `SUMMARY:${title}\r\n` +
+                    `DESCRIPTION:${description}\r\n` +
+                    `LOCATION:${location}\r\n` +
+                    "END:VEVENT\r\n" +
+                    "END:VCALENDAR\r\n";
+                
+                const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
+                const link = document.createElement('a');
+                link.href = URL.createObjectURL(blob);
+                link.setAttribute('download', 'Undangan_Uda_Uni_Payakumbuh.ics');
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            }
+        });
+        
+    </script>
+</body>
+</html>
